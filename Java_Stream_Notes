@@ -1,0 +1,57 @@
+
+Pre Requesties:
+	Java+1.7or 1.8
+	Maven Installation
+	Eclipse
+	Tomcat
+
+
+************************
+Spring Tech Notes:
+************************
+1. Folder Structure creation (src/target/pom.xml)
+	mvn archetype:generate 
+	-DgroupId={project-packaging}
+	-DartifactId={project-name}
+	-DarchetypeArtifactId={maven-template} 
+	-DinteractiveMode=false
+	
+Simple Jar Project	mvn archetype:generate -DgroupId=com.dhanam.streamtest -DartifactId=spring-core-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+Simple War Project : mvn archetype:generate -DgroupId=com.mkyong.web -DartifactId=java-web-project -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+2. what configuration needs to be done at pom.xml	
+	Dependency Cross Check vs (Original & New)
+	
+3. Spring-Core (Object creation out of Java, from xml file object injection will happen)
+	xml file creation
+	
+	Spring-MVC
+		web.xml
+		{servletname}-servlet.xml
+		@Controller
+		
+	
+3. How to execute the program via java.
+
+************************
+
+
+Tomcat Deployment of WAR:
+	class not found/method not found/method
+		-> Jar version is the fix. Find correct version in internet 
+	bean creation should have write method:
+	bean file configuration
+
+Installation:
+	Maven Installation:
+		Download Maven From:
+		Extract it to local.
+		Environment Variable:
+			Environment Variable -> MAVEN_HOME : Path before bin folder. (C:////apache-maven-3.1.1
+									Path: Path After bin  C:////apache-maven-3.1.1/bin)
+		Command Promt:
+			mvn version
+			
+Tomcat Installation:
+				Download Tomcat:
+				Server
